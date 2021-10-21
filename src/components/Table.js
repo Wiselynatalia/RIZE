@@ -43,7 +43,6 @@ function createData(id, name, code, quantity, value, warehouse, status) {
 export default function StickyHeadTable() {
   const [status, setStatus] = React.useState(false);
   const [selecteditems, setItems] = React.useState([]);
-  var flag = false;
   const [rows, setRows] = React.useState([
     createData(0, "Red Rice", 725272730702, 1324171354, 3287263, "A"),
     createData(1, "Jasmine Rice", 440656167345, 1403500365, 9596961, "A"),
@@ -63,19 +62,6 @@ export default function StickyHeadTable() {
   ]);
   var data = rows;
 
-  React.useEffect(() => {
-    setRows(data);
-    console.log("Restart", data);
-  }, [flag]);
-
-  const Delete = () => {
-    for (var i = 0; i < selecteditems.length; i++) {
-      data = rows.filter((j) => j.id !== selecteditems[i]);
-    }
-    console.log("Delete_triggered", data);
-    flag = true;
-  };
-
   return (
     <div style={{ height: 430, width: 1000 }}>
       <DataGrid
@@ -94,15 +80,18 @@ export default function StickyHeadTable() {
         }}
       />
       {status == true && (
-        <Popup
-          trigger={
-            <button className="Delete" onClick={Delete()}>
-              {" "}
-              Delete
-            </button>
-          }
-          position="right center"
-        ></Popup>
+        <button
+          className="Delete"
+          onClick={function () {
+            for (var i = 0; i < selecteditems.length; i++) {
+              data = rows.filter((j) => j.id !== selecteditems[i]);
+            }
+            setRows(data);
+          }}
+        >
+          {" "}
+          Delete
+        </button>
       )}
     </div>
   );
