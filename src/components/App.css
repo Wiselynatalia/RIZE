@@ -1,0 +1,59 @@
+.Green {
+  height: 365px;
+  width: auto;
+  background-color: #99bfac;
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 18px !important;
+}
+
+.css-1t29gy6-MuiToolbar-root {
+  min-height: 90px !important;
+  background-color: white;
+}
+
+.css-8u39c-MuiTypography-root {
+  color: black;
+  font-size: 25px !important;
+}
+
+.Directory {
+  background-color: white;
+  font-size: 30px;
+  border-bottom: 2px solid rgb(202, 201, 201);
+  height: 42px;
+  width: 1140px;
+  padding: 40px 30px;
+  margin: -3.5% 16.5%;
+}
+
+.Table {
+  margin: 5% 18.5%;
+}
+svg {
+  width: 150px;
+  height: 150px;
+  margin-left: 20%;
+}
+
+.Card {
+  width: 500px;
+  height: 220px;
+  margin: -4% 18.5%;
+  border: 1px solid rgb(224, 223, 223);
+  border-radius: 3px;
+}
+
+.pie text {
+  font-size: 9px;
+}
+
+.Delete {
+  height: 30px;
+  width: 60px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
