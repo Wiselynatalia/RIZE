@@ -19,8 +19,6 @@ import "./App.css";
 const drawerWidth = 240;
 
 function DrawerTab(props) {
-  const [title, setTitle] = React.useState("");
-
   const history = useHistory();
 
   const handleRoute = (event) => {

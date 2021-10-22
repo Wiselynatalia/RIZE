@@ -38,9 +38,12 @@ svg {
 }
 
 .Card {
-  width: 500px;
-  height: 220px;
-  margin: -4% 18.5%;
+  width: 650px;
+  height: 500px;
+  color: black;
+  margin: 10% auto;
+  padding: 10px 30px;
+  background-color: white;
   border: 1px solid rgb(224, 223, 223);
   border-radius: 3px;
 }
@@ -56,4 +59,97 @@ svg {
   border: none;
   color: white;
   border-radius: 3px;
+}
+
+.Add {
+  height: 50px;
+  width: 1000px;
+  font-size: medium;
+  background-color: #99bfac;
+  border: 3px solid #99bfac;
+  color: white;
+  border-radius: 0 0 3px 3px;
+}
+
+.Add:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.css-9mc7sf-MuiInputAdornment-root.MuiInputAdornment-positionStart.css-9mc7sf-MuiInputAdornment-root:not(.MuiInputAdornment-hiddenLabel) {
+  margin-top: 0px !important;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-align-items: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: transparent !important;
+  background-color: transparent !important;
+  outline: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  vertical-align: middle !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.00938em !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start !important;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center !important;
+  position: relative !important;
+}
+
+.Submit {
+  height: 38px;
+  width: 150px;
+  margin: 135px 0px 0px 160px;
+  background-color: rgb(109, 185, 109);
+  border-radius: 3px;
+  font-size: large;
+  color: white;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(51, 51, 51, 0.25);
 }
