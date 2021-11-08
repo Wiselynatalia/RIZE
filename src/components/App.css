@@ -22,14 +22,17 @@
   background-color: white;
   font-size: 30px;
   border-bottom: 2px solid rgb(202, 201, 201);
-  height: 42px;
+  height: 90px;
   width: 1140px;
-  padding: 40px 30px;
-  margin: -3.5% 16.5%;
+  padding: 0 30px;
+  margin: 0 16.5%;
+  line-height: 90px;
+  top: 0;
+  position: sticky;
 }
 
 .Table {
-  margin: 5% 18.5%;
+  margin: 2% 18.5%;
 }
 svg {
   width: 150px;
@@ -71,7 +74,7 @@ svg {
   border-radius: 0 0 3px 3px;
 }
 
-.Add:hover {
+button:hover {
   filter: brightness(80%);
   cursor: pointer;
 }
@@ -133,6 +136,10 @@ svg {
   position: relative !important;
 }
 
+.css-bshv44-MuiButtonBase-root-MuiListItem-root {
+  padding: 8px 16px !important;
+}
+
 .Submit {
   height: 38px;
   width: 150px;
@@ -150,6 +157,13 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 999;
   background: rgba(51, 51, 51, 0.25);
+}
+
+.theTitle {
+  transition: 0.1s ease-in-out;
+}
+.theTitle:hover {
+  transform: scale(0.97);
 }

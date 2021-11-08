@@ -1,9 +1,5 @@
 import React from "react";
 
 export default function Partners() {
-  return (
-    <div className="Directory">
-      <p> Partners </p>
-    </div>
-  );
+  return <div className="Directory">Partners</div>;
 }

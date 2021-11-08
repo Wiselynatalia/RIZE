@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import DrawerTab from "./Drawer";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Inventories from "./Inventories.js";
 import Orders from "./Orders.js";
 import Shipment from "./Shipment.js";
@@ -14,12 +14,12 @@ function App() {
       <div className="App">
         <DrawerTab />
       </div>
-      <NavLink to="/" exact>
+      {/* <NavLink to="/" exact>
         {" "}
         Home
       </NavLink>
       <NavLink to="/Inventories">Inventories</NavLink>
-      <NavLink to="/Orders">Orders</NavLink>
+      <NavLink to="/Orders">Orders</NavLink> */}
       <Switch>
         <Route component={Inventories} path="/Inventories" exact />
         <Route component={Orders} path="/Orders" exact />

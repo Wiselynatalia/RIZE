@@ -29,10 +29,10 @@ function DrawerTab(props) {
     <div>
       <Toolbar>
         <Typography
+          className="theTitle"
           variant="h5"
           style={{ color: "#184452", fontWeight: "bold", padding: "0px 5px" }}
         >
-          {" "}
           <strong> RIZE</strong> Admin
         </Typography>
       </Toolbar>
@@ -76,6 +76,7 @@ function DrawerTab(props) {
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
+            zIndex: 0,
           },
         }}
         open
