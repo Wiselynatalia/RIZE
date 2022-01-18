@@ -14,12 +14,6 @@ function App() {
       <div className="App">
         <DrawerTab />
       </div>
-      {/* <NavLink to="/" exact>
-        {" "}
-        Home
-      </NavLink>
-      <NavLink to="/Inventories">Inventories</NavLink>
-      <NavLink to="/Orders">Orders</NavLink> */}
       <Switch>
         <Route component={Inventories} path="/Inventories" exact />
         <Route component={Orders} path="/Orders" exact />

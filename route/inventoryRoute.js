@@ -1,7 +1,6 @@
-const { Note } = require("@mui/icons-material");
 const express = require("express");
 const router = express.Router();
-const Inventory = require("../models/inventoryModel");
+const { Shipment, Inventory } = require("../models/inventoryModel");
 
 router.route("/create").post((req, res) => {
   const name = req.body.name;
@@ -29,6 +28,22 @@ router.route("/create").post((req, res) => {
 
 router.route("/notes").get((req, res) => {
   Inventory.find().then((foundNotes) => res.json(foundNotes));
+});
+
+router.route("/recommendations").get((req, res) => {
+  Shipment.find().then((foundNotes) => res.json(foundNotes));
+});
+
+router.route("/delete/:id").delete((req, res) => {
+  const id = req.params.id;
+
+  Inventory.findOneAndDelete({ id: id }, function (err, docs) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Deleted user", docs);
+    }
+  });
 });
 
 module.exports = router;

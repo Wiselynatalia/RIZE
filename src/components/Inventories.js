@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import StickyHeadTable from "./Table";
 
-// import { PieChart } from "react-minimal-pie-chart";
-
 export default function Inventories() {
   return (
     <div>

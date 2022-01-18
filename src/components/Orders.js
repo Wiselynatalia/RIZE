@@ -1,5 +1,12 @@
 import React from "react";
+import box from "./Orders.png";
 
 export default function Orders() {
-  return <div className="Directory">Orders</div>;
+  return (
+    <div>
+      {" "}
+      <div className="Directory">Orders</div>;
+      <img src={box} className="Image" />
+    </div>
+  );
 }
